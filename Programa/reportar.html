@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar Incidente</title>
+</head>
+<body>
+
+    <header>
+        <img src="assets/img/Logo.png" alt="Logo Help Desk" width="100">
+        <h1>Registro de Incidentes</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a> |
+        <a href="reportar.html">Reportar Incidente</a> |
+        <a href="tickets.html">Ver Tickets</a>
+    </nav>
+
+    <main>
+
+        <section>
+
+            <article>
+                <h2>Formulario de Reporte</h2>
+
+                <form action="#" method="post">
+
+                    <label for="titulo">
+                        Título del incidente:
+                    </label>
+                    <br>
+                    <input type="text" id="titulo" name="titulo" required>
+                    <br><br>
+
+                    <label for="categoria">
+                        Categoría:
+                    </label>
+                    <br>
+                    <select id="categoria" name="categoria">
+                        <option value="red">Red</option>
+                        <option value="hardware">Hardware</option>
+                        <option value="software">Software</option>
+                    </select>
+                    <br><br>
+
+                    <p>Prioridad:</p>
+
+                    <input type="radio" id="alta" name="prioridad" value="alta">
+                    <label for="alta">Alta</label>
+
+                    <input type="radio" id="media" name="prioridad" value="media">
+                    <label for="media">Media</label>
+
+                    <input type="radio" id="baja" name="prioridad" value="baja">
+                    <label for="baja">Baja</label>
+
+                    <br><br>
+
+                    <label for="descripcion">
+                        Descripción detallada:
+                    </label>
+                    <br>
+                    <textarea id="descripcion" name="descripcion" rows="6" cols="40"></textarea>
+
+                    <br><br>
+
+                    <button type="submit">Enviar Reporte</button>
+                    <button type="reset">Limpiar</button>
+
+                </form>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Universidad Técnica de Manabí - Desarrollo de Sistemas Informáticos 2026</p>
+    </footer>
+
+</body>
+</html>
